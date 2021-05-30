@@ -1,5 +1,5 @@
-#define FASTLED_ALL_PINS_HARDWARE_SPI
-#include "fastLED.h"
+// #define FASTLED_ALL_PINS_HARDWARE_SPI //hmm this is a problem https://github.com/FastLED/FastLED/pull/1047
+#include <FastLED.h>
 
 #include "LED_Peripheral.h"
 

@@ -1,4 +1,4 @@
-#include "POV_Pattern.h"
+#include "POV_pattern.h"
 
 POV_Pattern::POV_Pattern(const char *fileName) {
   // Constructor uses ReadImage to get image data from fileName, reorients it so
