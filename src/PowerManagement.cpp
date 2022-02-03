@@ -82,7 +82,7 @@ void check_for_low_battery() {
   int battVoltage = get_battery_voltage();
   if (battVoltage < 3180) {
     LED_showBatteryPercent(battVoltage);
-    sleep();
+    // sleep(); //disabled for testing
   }
 }
 // END OF check_battery()

@@ -56,9 +56,16 @@ void loop() {
     patterns.Run();
   }
 
-  static NoBlockTimer low_batt_check;
-  if (low_batt_check.timer(10000)) {
-    check_for_low_battery();
+  //test switch next pattern
+  static NoBlockTimer t2;
+  if (t2.timer(5000)) {
+    patterns.NextPattern();
   }
+
+//disabled for testing
+  // static NoBlockTimer low_batt_check;
+  // if (low_batt_check.timer(10000)) {
+  //   check_for_low_battery();
+  // }
 
 } // end of loop()

@@ -5,10 +5,10 @@
 #include "NoBlockTimer.h"
 #include "POV_pattern.h"
 
-#define DATA_PIN 23
-#define CLOCK_PIN 18
-#define NUM_LEDS 32
-#define MAX_BRIGHTNESS 70       // 255 is maximum value
+#define DATA_PIN 4
+#define CLOCK_PIN 2
+#define NUM_LEDS 36
+#define MAX_BRIGHTNESS 20       // 255 is maximum value
 #define NUM_BRIGHTNESS_LEVELS 4 // Macro used in cycleBrightness()
 
 // UTILITY FUNCTIONS

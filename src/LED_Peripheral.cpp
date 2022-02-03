@@ -1,5 +1,5 @@
 // #define FASTLED_ALL_PINS_HARDWARE_SPI //hmm this is a problem https://github.com/FastLED/FastLED/pull/1047
-#include <FastLED.h>
+#include "FastLED.h"
 
 #include "LED_Peripheral.h"
 
@@ -12,7 +12,7 @@ CRGB leds[NUM_LEDS];
 /////////////////////////////////////////////////////////////////////
 
 void LED_Peripheral_setup() {
-  FastLED.addLeds<SK9822, DATA_PIN, CLOCK_PIN, BGR, DATA_RATE_MHZ(25)>(
+  FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, BGR, DATA_RATE_MHZ(25)>(
       leds, NUM_LEDS); // BGR
   set_max_power_in_milliwatts(2000);
   FastLED.setBrightness(MAX_BRIGHTNESS);

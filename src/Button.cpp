@@ -45,7 +45,7 @@ void duringLongPress() {
     LED_indicateButtonHold();
   }
   if (btn.getPressedTicks() >= 2250) {
-    sleep();
+    // sleep(); //disabled for testing
   }
 }
 
